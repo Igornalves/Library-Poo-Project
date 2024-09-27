@@ -1,18 +1,69 @@
-## Getting Started
+## Projeto Sistema para Biblioteca
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Esse sistema aqui é uma sistema para ser desenvolvido como o uso de uma logica de POO em java para criacao desse sistema para aprndizagem e reforco de base na logica e estruturacao de projeto.
 
-## Folder Structure
+## Índice
 
-The workspace contains two folders by default, where:
+- [Tecnologias e Ferramentas Utilizadas](#tecnologias-e-ferramentas-utilizadas)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação e Configuração](#instalação-e-configuração)
+- [Execução do Projeto](#execução-do-projeto)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Tecnologias e Ferramentas Utilizadas
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+<br>
+<div style="display: inline_block" align="center">
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+<img width="100" src="https://skillicons.dev/icons?i=java">
 
-## Dependency Management
+</div>
+<br>
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- ***Linguagem:*** Java
+
+## Pré-requisitos
+
+é necessário garantir que seu ambiente de desenvolvimento esteja configurado adequadamente. Aqui estão os principais pré-requisitos:
+
+<br>
+<div style="display: inline_block" align="center">
+
+<img width="100" src="https://skillicons.dev/icons?i=java">
+
+</div>
+<br>
+
+- Java Development Kit (JDK): ***versão 8*** ou superior como a ***JDK 17*** recomendada pela documentacao.
+
+
+#### IDE (Ambiente de Desenvolvimento Integrado):
+
+<br>
+<div style="display: inline_block" align="center">
+
+<img width="100" src="https://skillicons.dev/icons?i=vscode">
+<img width="100" src="https://skillicons.dev/icons?i=eclipse">
+<img width="100" src="https://skillicons.dev/icons?i=idea">
+
+</div>
+<br>
+
+ - ***IntelliJ IDEA*** (com o plugin Spring Boot integrado).
+ - ***Eclipse*** (com o plugin Spring Tools Suite - STS).
+ - ***VS Code*** (com extensões para Java e Spring Boot)
+
+## Instalação e Configuração
+
+1. **Clone o repositório**:
+    ```bash
+    git clone https://github.com/seu-repositorio/sistema-gerenciamento-escola.git
+    ```
+2. **Ir ate a pasta APP e roda o codigo main**
+    ```java 
+    public class App {
+        public static void main(String[] args) throws Exception {
+            System.out.println("Hello, World!");
+        }
+    }
+    ```

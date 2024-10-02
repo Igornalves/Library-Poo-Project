@@ -1,38 +1,29 @@
 package Class;
 
-import Services.EmprestimoService;
+import java.util.UUID;
 
 public class Emprestimo {
 
-    private String id;
+    private String id = UUID.randomUUID().toString();
     private Usuario usuario;
     private Livro livro;
     private String dataEmprestimo;
     private String dataDevolucaoReal;
     private String dataDevolucaoPrevista;
     private boolean status;
-
-    @SuppressWarnings("unused")
-    private EmprestimoService emprestimoService;
     
-    public Emprestimo(String id, Usuario usuario, Livro livro, String dataEmprestimo, String dataDevolucaoReal,
+    public Emprestimo(Usuario usuario, Livro livro, String dataEmprestimo, String dataDevolucaoReal,
             String dataDevolucaoPrevista, boolean status) {
-        this.id = id;
         this.usuario = usuario;
         this.livro = livro;
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucaoReal = dataDevolucaoReal;
         this.dataDevolucaoPrevista = dataDevolucaoPrevista;
         this.status = status;
-        this.emprestimoService = new EmprestimoService();
     }
 
     public String getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public Usuario getUsuario() {

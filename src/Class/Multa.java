@@ -1,33 +1,24 @@
 package Class;
 
-import Services.MultaService;
+import java.util.UUID;
 
 public class Multa {
 
-    private String id;
+    private String id = UUID.randomUUID().toString();
     private Usuario usuario;
     private String valor;
     private String dataGeracao;
     private String status;
 
-    @SuppressWarnings("unused")
-    private MultaService multaService;
-
-    public Multa(String id, Usuario usuario, String valor, String dataGeracao, String status) {
-        this.id = id;
+    public Multa(Usuario usuario, String valor, String dataGeracao, String status) {
         this.usuario = usuario;
         this.valor = valor;
         this.dataGeracao = dataGeracao;
         this.status = status;
-        this.multaService = new MultaService();
     }
 
     public String getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public Usuario getUsuario() {

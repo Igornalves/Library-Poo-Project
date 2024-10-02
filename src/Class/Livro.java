@@ -1,28 +1,25 @@
 package Class;
 
-import Services.LivroService;
+import java.util.UUID;
 
 public class Livro {
 
+    private String id = UUID.randomUUID().toString();
     private String titulo;
     private String autor;
     private String editora;
     private String anoPublicacao;
     private String numeroExemplares;
-    private String disponibilidade;
-
-    @SuppressWarnings("unused")
-    private LivroService livroService;
+    private boolean disponibilidade;
 
     public Livro(String titulo, String autor, String editora, String anoPublicacao, String numeroExemplares,
-            String disponibilidade) {
+            boolean disponibilidade) {
         this.titulo = titulo;
         this.autor = autor;
         this.editora = editora;
         this.anoPublicacao = anoPublicacao;
         this.numeroExemplares = numeroExemplares;
         this.disponibilidade = disponibilidade;
-        this.livroService = new LivroService();
     }
 
     public String getTitulo() {
@@ -65,12 +62,16 @@ public class Livro {
         this.numeroExemplares = numeroExemplares;
     }
 
-    public String getDisponibilidade() {
+    public boolean getDisponibilidade() {
         return disponibilidade;
     }
 
-    public void setDisponibilidade(String disponibilidade) {
+    public void setDisponibilidade(boolean disponibilidade) {
         this.disponibilidade = disponibilidade;
+    }
+
+    public String getId() {
+        return id;
     }
 
 }

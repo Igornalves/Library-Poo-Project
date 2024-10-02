@@ -1,6 +1,7 @@
 package Services;
 
 public class EmprestimoService {
+
     public void calcularMulta() {
         
     }
@@ -11,5 +12,9 @@ public class EmprestimoService {
 
     public void registraDevolucao() {
 
+    }
+
+    public void relatorioEmprestimo() {
+        
     }
 }

@@ -10,7 +10,7 @@ public class Livro {
     private String editora;
     private String anoPublicacao;
     private String numeroExemplares;
-    private boolean disponibilidade;
+    private boolean disponibilidade = false;
 
     public Livro(String titulo, String autor, String editora, String anoPublicacao, String numeroExemplares,
             boolean disponibilidade) {
